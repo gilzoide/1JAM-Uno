@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://piao/Piao.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Chao/Chao.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Estadio/Estadio.tscn" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Chao" parent="." instance=ExtResource( 2 )]
+
+[node name="Piao" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.984808, -0.173648, 0, 0.173648, 0.984808, 0, 13.1599, -28.8701 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.80368, -0.448908, 0.390615, 0, 0.656428, 0.754389, -0.595061, 0.606288, -0.527558, 29.6442, 59.7473, -38.5134 )
+fov = 54.4
+far = 150.0
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Estadio" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.06645, 0 )

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Piao.obj-1a28bdd24b1ed6b118dd17d4f49e9b61.mesh"
+
+[deps]
+
+files=[ "res://.import/Piao.obj-1a28bdd24b1ed6b118dd17d4f49e9b61.mesh" ]
+
+source_file="res://piao/Piao.obj"
+dest_files=[ "res://.import/Piao.obj-1a28bdd24b1ed6b118dd17d4f49e9b61.mesh", "res://.import/Piao.obj-1a28bdd24b1ed6b118dd17d4f49e9b61.mesh" ]
+
+[params]
+
+generate_tangents=false
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

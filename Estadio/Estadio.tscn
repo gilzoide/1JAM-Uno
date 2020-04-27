@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Estadio/Estadio_material.tres" type="Material" id=1]
+
+[node name="Estadio" type="CSGBox"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0 )
+use_collision = true
+width = 100.0
+height = 30.0
+depth = 100.0
+material = ExtResource( 1 )
+
+[node name="Furo" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32782, 7.81236, 0.141403 )
+operation = 2
+width = 95.0
+height = 15.0
+depth = 95.0
+material = ExtResource( 1 )
