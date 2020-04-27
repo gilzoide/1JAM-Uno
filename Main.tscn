@@ -9,10 +9,11 @@
 [node name="Chao" parent="." instance=ExtResource( 2 )]
 
 [node name="Piao" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 0.984808, -0.173648, 0, 0.173648, 0.984808, 0, 13.1599, -28.8701 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -28.87 )
+rotation_speed = 500.0
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.80368, -0.448908, 0.390615, 0, 0.656428, 0.754389, -0.595061, 0.606288, -0.527558, 29.6442, 59.7473, -38.5134 )
+transform = Transform( 1, 0, 0, 0, 0.656428, 0.754389, 0, -0.754389, 0.656428, 7.1003, 59.7473, 61.9403 )
 fov = 54.4
 far = 150.0
 
