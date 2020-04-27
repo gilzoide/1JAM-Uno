@@ -2,6 +2,7 @@ extends KinematicBody
 
 export(float) var move_speed = 10
 export(float) var rotation_speed = 500
+const MOVE_ROTATION_ANGLE = 15
 
 var move_to: Vector3
 
@@ -23,7 +24,9 @@ func _process(delta):
 
 func animate(moving_to: Vector3, delta: float):
 	$Pivot/Mesh.rotate_object_local(Vector3.DOWN, rotation_speed * delta)
-	$Pivot.rotation = Vector3(deg2rad(moving_to.z * 30), 0, deg2rad(-moving_to.x * 30))
+	$Pivot.rotation = Vector3(deg2rad(moving_to.z * MOVE_ROTATION_ANGLE),
+		0,
+		deg2rad(-moving_to.x * MOVE_ROTATION_ANGLE))
 
 func apply_move(moving_to: Vector3, delta: float):
 	var _x = move_and_collide(moving_to * move_speed * delta)
