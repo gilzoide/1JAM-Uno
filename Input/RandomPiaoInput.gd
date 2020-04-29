@@ -1,10 +1,10 @@
-extends "res://Input/PiaoInput.gd"
+extends PiaoInput
 
 var timer = 0.0
 export(float) var seconds_to_change = 2
 var rng = RandomNumberGenerator.new()
 
-func _init():
+func _ready():
 	set_process(true)
 
 func _process(delta):

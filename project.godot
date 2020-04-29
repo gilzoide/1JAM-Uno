@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "PiaoInput",
+"language": "GDScript",
+"path": "res://Input/PiaoInput.gd"
+} ]
 _global_script_class_icons={
-
+"PiaoInput": ""
 }
 
 [application]
@@ -18,15 +23,6 @@ _global_script_class_icons={
 config/name="Piaozera"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
-
-[input]
-
-up={
-"deadzone": 0.5,
-"events": [ Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":-1.0,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
- ]
-}
 
 [rendering]
 

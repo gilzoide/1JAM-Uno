@@ -3,7 +3,7 @@
 [ext_resource path="res://piao/PiaoMesh.tres" type="ArrayMesh" id=1]
 [ext_resource path="res://piao/Piao.gd" type="Script" id=2]
 
-[sub_resource type="CylinderShape" id=3]
+[sub_resource type="CylinderShape" id=1]
 radius = 0.25
 height = 2.43833
 
@@ -11,7 +11,7 @@ height = 2.43833
 radius = 2.60386
 height = 0.5
 
-[sub_resource type="CylinderShape" id=4]
+[sub_resource type="CylinderShape" id=3]
 radius = 3.2
 height = 0.5
 
@@ -30,7 +30,7 @@ material/4 = null
 
 [node name="PontinhaCollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="BodyCollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.691, 0 )
@@ -38,4 +38,4 @@ shape = SubResource( 2 )
 
 [node name="BodyCollisionShape2" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08342, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
