@@ -9,3 +9,6 @@ debug.txt
 .mono/
 data_*/
 
+# Build folder
+Build/
+
